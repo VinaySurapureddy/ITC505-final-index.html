@@ -1,0 +1,164 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: linear-gradient(to right, #83a4d4, #b6fbff);
+    color: #333;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #003366;
+    text-shadow: 2px 2px #ffffffaa;
+  }
+  
+  .subtitle {
+    font-size: 1.2em;
+    color: #f9f9f9;
+    text-shadow: 1px 1px #333;
+  }
+  
+  .rules {
+    max-width: 800px;
+    margin: 10px auto 20px auto;
+    background: #ffffffcc;
+    padding: 10px 15px;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    font-size: 14px;
+  }
+  
+  .rules h2 {
+    font-size: 1.2em;
+    color: #4CAF50;
+    margin-bottom: 8px;
+  }
+  
+  .rules ul {
+    padding-left: 18px;
+    margin: 0;
+  }
+  
+  .rules ul li {
+    margin-bottom: 6px;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+  }
+  
+  .cell {
+    width: 60px;
+    height: 60px;
+    background-color: #444;
+    border: 2px solid #000;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .cell.is-off {
+    background-color: #fff;
+  }
+  
+  .controls {
+    text-align: center;
+    margin: 15px 0;
+  }
+  
+  .controls button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    transition: background-color 0.2s ease;
+  }
+  
+  .controls button:hover {
+    background-color: #45a049;
+  }
+  
+  .addendum {
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 10px 15px;
+    background: #ffffffdd;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    font-size: 13px;
+    flex-wrap: wrap;
+    border-left: 4px solid #4CAF50;
+    box-shadow: 0 0 6px rgba(0,0,0,0.08);
+  }
+  
+  .addendum h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #4CAF50;
+  }
+  
+  .addendum-content p {
+    flex: 1 1 250px;
+    margin: 4px 0;
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 40px;
+    color: #fff;
+  }
+  
+  /* Popup Styles */
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    max-width: 300px;
+  }
+  
+  .popup-content h2 {
+    color: #4CAF50;
+    margin-top: 0;
+  }
+  
+  .popup-content button {
+    margin-top: 15px;
+    padding: 8px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
